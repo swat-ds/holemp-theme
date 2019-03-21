@@ -1679,6 +1679,9 @@ footer {
 .exhibits.browse #content nav.secondary-nav {
   display: none; }
 
+.neatline.show #content > h1 {
+  display: none; }
+
 #neatline-map #static-bubble .content.item h3 {
   display: none; }
 
