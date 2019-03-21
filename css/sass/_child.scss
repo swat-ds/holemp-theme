@@ -31,3 +31,8 @@ a:hover, #primary-nav a:hover, #primary-nav a:focus, #primary-nav li.active > a 
         line-height: $base-line-height * 1.25;
     }
 }
+
+.exhibits.browse #content {
+    h1:first-child { display: none; }
+    nav.secondary-nav { display: none; }
+}

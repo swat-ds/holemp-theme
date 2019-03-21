@@ -1673,6 +1673,12 @@ footer {
   font-size: 22.5px;
   line-height: 30px; }
 
+.exhibits.browse #content h1:first-child {
+  display: none; }
+
+.exhibits.browse #content nav.secondary-nav {
+  display: none; }
+
 @media screen and (max-width: 768px) {
   /* @group ----- Generic HTML elements ----- */
   input[type=text], input[type=password], textarea {
