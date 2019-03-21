@@ -1,0 +1,33 @@
+// holidays in the empire theme
+// ds@swat
+
+#site-title {
+    width: 100%;
+}
+
+#site-title,h1,h2,h3,h4,h5 {
+    font-family: 'Playfair Display', Georgia;
+}
+
+a:link {
+    // color: $primary-color;
+}
+
+a:hover, #primary-nav a:hover, #primary-nav a:focus, #primary-nav li.active > a {
+    // color: $contrast-color;
+}
+
+.navigation.nav-menu li {
+    font-family: 'UnifrakturCook';
+}
+
+#search-container {
+    display: none;
+}
+
+#home {
+    #primary p {
+        font-size: $base-font-size * 1.25;
+        line-height: $base-line-height * 1.25;
+    }
+}

@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|UnifrakturCook:700');
+
 @import "normalize";
 @import "screen";
+@import "child";
 
 @media screen and (max-width:768px) {
     @import "768max";

@@ -6,7 +6,8 @@
 * { box-sizing: border-box; }
 
 body {
-    font: $base-font-size Helvetica, Arial, sans-serif;
+    // font: $base-font-size Helvetica, Arial, sans-serif;
+    font: $base-font-size "Playfair Display", Georgia, sans-serif;
     line-height: $base-line-height;
     color: #333;
     background: #fff;
@@ -44,7 +45,7 @@ input[type="checkbox"] {
     h1, h2, h3 {
         font-weight: normal;
         font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;
-        color:#015581;
+        color: $primary-color; // color: #015581;
     }
 
     h1 {
@@ -63,7 +64,7 @@ input[type="checkbox"] {
     h3 {
         font-size: 1.5 * $base-font-size;
         line-height: $base-line-height;;
-        color:#015581;
+        color: $primary-color; // color: #015581;
     }
 
     h4, h5 {
@@ -119,9 +120,9 @@ input[type="checkbox"] {
     }
 
     /* -- Links -- */
-    a:link, a:visited { color: #369; }
+    a:link, a:visited { color: $primary-color; } // color: #369; }
 
-    a:hover, a:active { color: #ff8000; }
+    a:hover, a:active { color: $contrast-color; } // color: #ff8000; }
 
     img a { border:none; }
 
@@ -152,7 +153,7 @@ header {
     width:50%;
     font-weight: normal;
     font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;
-    color:#015581;
+    color: $primary-color; // color: #015581;
     font-size: 3 * $base-font-size;
     line-height: 2 * $base-line-height;
     text-transform:uppercase;
@@ -296,7 +297,8 @@ header {
     width: auto;
     padding: .5em;
     border: 1px blue dashed;
-    color: #ff8000;
+    // color: #ff8000;
+    color: $contrast-color;
 }
 
 /* @end */
@@ -471,7 +473,8 @@ header {
     a:hover,
     a:focus,
     li.active > a {
-        color:#ff8000;
+        // color:#ff8000;
+        color: $contrast-color;
         position: relative;
         z-index: 1;
     }
@@ -616,7 +619,8 @@ nav + .exhibit {
 #home {
     #primary {
         float:left;
-        @include columns(8);
+        // @include columns(8);
+        @include columns(16);
         @include alpha;
         margin-right: 0;
         padding-right: 10px;
@@ -624,7 +628,8 @@ nav + .exhibit {
 
     #secondary {
         float:right;
-        @include columns(8);
+        // @include columns(8);
+        display: none;
         @include omega;
         padding-left: 10px;
     }
