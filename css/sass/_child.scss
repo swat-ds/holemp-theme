@@ -36,3 +36,11 @@ a:hover, #primary-nav a:hover, #primary-nav a:focus, #primary-nav li.active > a 
     h1:first-child { display: none; }
     nav.secondary-nav { display: none; }
 }
+
+#neatline-map #static-bubble .content.item {
+    h3 { display: none; }
+    #dublin-core-description,
+    #dublin-core-subject,
+    #dublin-core-source,
+    #dublin-core-rights { display: none; }
+}

@@ -1679,6 +1679,15 @@ footer {
 .exhibits.browse #content nav.secondary-nav {
   display: none; }
 
+#neatline-map #static-bubble .content.item h3 {
+  display: none; }
+
+#neatline-map #static-bubble .content.item #dublin-core-description,
+#neatline-map #static-bubble .content.item #dublin-core-subject,
+#neatline-map #static-bubble .content.item #dublin-core-source,
+#neatline-map #static-bubble .content.item #dublin-core-rights {
+  display: none; }
+
 @media screen and (max-width: 768px) {
   /* @group ----- Generic HTML elements ----- */
   input[type=text], input[type=password], textarea {
