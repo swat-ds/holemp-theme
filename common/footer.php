@@ -26,6 +26,7 @@
         Omeka.skipNav();
         Omeka.megaMenu();
         Berlin.dropDown();
+        Holemp.emoji();
     });
 </script>
 

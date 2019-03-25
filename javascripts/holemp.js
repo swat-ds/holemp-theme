@@ -6,25 +6,30 @@ neatline emoji helper
 
 */
 
-const emoji = {
-guidebooks: 'books.png',
-geography: 'mountain.png',
-people: 'bust_in_silhouette.png',
-religion: 'mosque.png',
-climate: 'sunny.png',
-cities: 'house-buildings',
-culture: 'crescent_moon.png',
-economy: 'monybag.png',
-encounters: 'eye.png'
-}
+(function ($) {    
 
-const baseUrl = 'https://ds-exhibits.swarthmore.edu/holidays-in-the-empire/themes/theme-holemp/emoji/'
+    Holemp.emoji = function(){
 
-emoji.map( function(value, key) {
+        const emoji = {
+            guidebooks: 'books.png',
+            geography: 'mountain.png',
+            people: 'bust_in_silhouette.png',
+            religion: 'mosque.png',
+            climate: 'sunny.png',
+            cities: 'house-buildings',
+            culture: 'crescent_moon.png',
+            economy: 'monybag.png',
+            encounters: 'eye.png'
+        }
 
-    $.each($('[*|href="' + key + '"]'), function(i,e) { 
-        $(e).attr('xlink:href', baseUrl + value) 
-    })
+        const baseUrl = 'https://ds-exhibits.swarthmore.edu/holidays-in-the-empire/themes/theme-holemp/emoji/'
 
-});
+        emoji.map( function(value, key) {
 
+            $.each($('[*|href="' + key + '"]'), function(i,e) { 
+                $(e).attr('xlink:href', baseUrl + value) 
+            })
+
+        });
+    };
+})(jQuery)
