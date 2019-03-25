@@ -20,10 +20,11 @@ encounters: 'eye.png'
 
 const baseUrl = 'https://ds-exhibits.swarthmore.edu/holidays-in-the-empire/themes/theme-holemp/emoji/'
 
-emoji.map( function(value, key) {
+$.map(emoji, function(value, key) {
 
-    $.each($('[*|href="' + key + '"]'), function(i,e) { 
-        $(e).attr('xlink:href', baseUrl + value) 
+    $.map($('[*|href="' + key + '"]'), function(i,e) { 
+	console.log(e,key)
+        $(e).attr('xlink:href', baseUrl + emoji[key]) 
     })
 
 });
