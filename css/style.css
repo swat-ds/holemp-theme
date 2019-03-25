@@ -1691,6 +1691,10 @@ footer {
 #neatline-map #static-bubble .content.item #dublin-core-rights {
   display: none; }
 
+#neatline-narrative td {
+  text-align: center;
+  vertical-align: middle; }
+
 @media screen and (max-width: 768px) {
   /* @group ----- Generic HTML elements ----- */
   input[type=text], input[type=password], textarea {
