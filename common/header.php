@@ -29,7 +29,6 @@
     <?php queue_js_file('vendor/respond'); ?>
     <?php queue_js_file('vendor/jquery-accessibleMegaMenu'); ?>
     <?php queue_js_file('berlin'); ?>
-    <?php queue_js_file('holemp'); ?>
     <?php queue_js_file('globals'); ?>
     <?php echo head_js(); ?>
 </head>
