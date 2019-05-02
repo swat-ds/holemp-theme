@@ -12,15 +12,16 @@ neatline emoji helper
             people: 'bust_in_silhouette.png',
             religion: 'mosque.png',
             climate: 'sunny.png',
-            cities: 'house-buildings',
+            cities: 'house-buildings.png',
             culture: 'crescent_moon.png',
-            economy: 'monybag.png',
+            economy: 'moneybag.png',
             encounters: 'eye.png'
         }
 
         const baseUrl = 'https://ds-exhibits.swarthmore.edu/holidays-in-the-empire/themes/theme-holemp/emoji/'
 
 	function getEmojiUrl(t) {
+		t = t.trim();
 		if (t.includes('http')) { return t }
 		else { return baseUrl + emoji[t]; }
 	}
