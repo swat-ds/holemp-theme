@@ -1686,7 +1686,7 @@ h2 {
   display: none; }
 
 .exhibits.browse #content h1:first-child {
-  display: none; }
+  visibility: hidden; }
 
 .exhibits.browse #content nav.secondary-nav {
   display: none; }
@@ -1760,6 +1760,9 @@ h2 {
   display: flex;
   -ms-flex-pack: space-evenly;
       justify-content: space-evenly; }
+
+#glossary h3 {
+  font-weight: bold; }
 
 @media screen and (max-width: 768px) {
   /* @group ----- Generic HTML elements ----- */

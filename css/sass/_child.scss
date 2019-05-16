@@ -53,7 +53,7 @@ a:hover, #primary-nav a:hover, #primary-nav a:focus, #primary-nav li.active > a 
 }
 
 .exhibits.browse #content {
-    h1:first-child { display: none; }
+    h1:first-child { visibility: hidden; }
     nav.secondary-nav { display: none; }
 }
 
@@ -131,4 +131,8 @@ a:hover, #primary-nav a:hover, #primary-nav a:focus, #primary-nav li.active > a 
 #landing .exhibits-row {
     display: flex;
     justify-content: space-evenly;
+}
+
+#glossary h3 {
+    font-weight: bold;
 }
