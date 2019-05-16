@@ -11,7 +11,7 @@
 
 // #Variable Definitions
 // ==================================================
-    $base-width: 960px;
+    $base-width: 1140px;
     $tablet-width: 768px;
     $mobile-portrait-width: 300px;
     $mobile-landscape-width: 420px;
@@ -40,7 +40,7 @@
             clear: both;
             visibility: hidden; }
 
-        @media only screen and (min-width: 768px) and (max-width: 959px) {
+        @media only screen and (min-width: 768px) and (max-width: $base-width - 1px) {
             width: $tablet-width; }
 
         @media only screen and (max-width: 767px) {
@@ -68,7 +68,7 @@
         @include column;
         width: skeleton-column-width($num, $base-width);
 
-        @media only screen and (min-width: 768px) and (max-width: 959px) {
+        @media only screen and (min-width: 768px) and (max-width: $base-width - 1px) {
             width: skeleton-column-width($num, $tablet-width); }
 
         @media only screen and (max-width: 767px) {
@@ -81,7 +81,7 @@
         @include column;
         width: skeleton-third-width($num, $base-width);
 
-        @media only screen and (min-width: 768px) and (max-width: 959px) {
+        @media only screen and (min-width: 768px) and (max-width: $base-width - 1px) {
             width: skeleton-third-width($num, $tablet-width); }
 
         @media only screen and (max-width: 767px) {
@@ -94,7 +94,7 @@
         $offset: 2 * $margin;
         padding-left: skeleton-column-width($num, $base-width) + $offset;
 
-        @media only screen and (min-width: 768px) and (max-width: 959px) {
+        @media only screen and (min-width: 768px) and (max-width: $base-width - 1px) {
             padding-left: skeleton-column-width($num, $tablet-width) + $offset; }
 
         @media only screen and (max-width: 767px) {

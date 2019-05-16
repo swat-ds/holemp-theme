@@ -5,9 +5,33 @@
     width: 100%;
 }
 
-#site-title,h1,h2,h3,h4,h5 {
+#site-title, h1 {
     font-family: 'Playfair Display', Georgia;
+    letter-spacing: .1em;
 }
+
+
+h1, h2, h3, h4, h5, h6 { margin-bottom: $base-line-height; }
+
+h1, h2, h3, h4 {
+    font-weight: normal;
+    font-family: "Raleway", "Gill Sans", Arial, sans-serif;
+    color: $primary-color; // color: #015581;
+}
+
+h1 {
+    // font-family: "Playfair Display", Georgia, serif;
+    font-family: "Raleway", "Gill Sans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.75 * $base-font-size;
+    line-height: 1.75 * $base-line-height;
+}
+
+h2 {
+    font-size: 2 * $base-font-size;
+    line-height: 2 * $base-line-height;
+}
+
 
 a:link {
     // color: $primary-color;
@@ -17,24 +41,25 @@ a:hover, #primary-nav a:hover, #primary-nav a:focus, #primary-nav li.active > a 
     // color: $contrast-color;
 }
 
-.navigation.nav-menu li {
-    font-family: 'UnifrakturCook';
-}
-
 #search-container {
     display: none;
 }
 
-#home {
+#landing {
     #primary p {
-        font-size: $base-font-size * 1.25;
-        line-height: $base-line-height * 1.25;
+        // font-size: $base-font-size * 1.25;
+        // line-height: $base-line-height * 1.25;
     }
 }
 
 .exhibits.browse #content {
     h1:first-child { display: none; }
     nav.secondary-nav { display: none; }
+}
+
+#exhibit-pages li a {
+    font-family: Raleway;
+    text-transform: uppercase;
 }
 
 .neatline.show #content > h1 { display: none; }
@@ -50,4 +75,60 @@ a:hover, #primary-nav a:hover, #primary-nav a:focus, #primary-nav li.active > a 
 #neatline-narrative td {
     text-align: center;
     vertical-align: middle;
+}
+
+.contributors-gallery .contributor {
+  
+  // height: 210px;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+
+  & .avatar {
+    float: left;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    border-radius: 50%;
+  }
+
+  & .bio {
+    display: inline-block;
+    float: left;
+    width: 70%;
+    height: 100%;
+    margin-left: 1rem;
+
+    @media screen and (max-width: 767px) { margin-left: 0; }
+
+    & p, & h3 {
+      font-size: 1rem;
+    }
+  }
+
+}
+
+.contributors-gallery .contributor:last-of-type {
+    margin-bottom: 0;
+}
+
+.clearfix {
+    @include clearfix;
+}
+
+#landing .exhibit.record {
+
+    max-width: 10rem;
+    // display: inline-block;
+
+    p {
+        display: none;
+    }
+}
+
+#landing .exhibits-row {
+    display: flex;
+    justify-content: space-evenly;
 }

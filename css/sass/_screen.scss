@@ -568,7 +568,8 @@ header {
     border:1px solid #ccc;
     background:#fff;
     @include container;
-    padding: (1 * $spacing-unit) 10px;
+    // padding: (1 * $spacing-unit) 10px;
+    padding: (.25 * $spacing-unit) $spacing-unit;
     z-index: 0;
 }
 
@@ -689,7 +690,8 @@ nav + .exhibit {
 
 .items #content {
     @include container;
-    padding: (1 * $spacing-unit) 10px;
+    padding: (.25 * $spacing-unit) $spacing-unit;
+    // padding: (1 * $spacing-unit) 10px;
 }
 
 #next-item { float: right; }
@@ -1149,15 +1151,17 @@ footer {
 }
 
 #exhibit-pages {
-    width: skeleton-column-width(4, $base-width);
+    // width: skeleton-column-width(4, $base-width);
+    width: skeleton-column-width(4, $base-width - (4 * $spacing-unit));
     display: inline-block;
 
     @media only screen and (min-width: 768px) and (max-width: 959px) {
-        width: skeleton-column-width(4, $tablet-width); }
+        // width: skeleton-column-width(4, $tablet-width); }
+        width: skeleton-column-width(4, $tablet-width  - (4 * $spacing-unit)); }
 
     h4 {
-        font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;
-        font-weight: normal;
+        font-family: 'Raleway', 'Gill Sans', sans-serif;
+        font-weight: 600;
         text-transform: uppercase;
     }
 
