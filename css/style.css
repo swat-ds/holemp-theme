@@ -1685,6 +1685,10 @@ h2 {
 #search-container {
   display: none; }
 
+#landing .exhibits-row h3 {
+  min-height: 2em;
+  text-align: center; }
+
 .exhibits.browse #content h1:first-child {
   visibility: hidden; }
 
