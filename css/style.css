@@ -1835,6 +1835,10 @@ ul#colonization-timeline {
       width: 0;
       height: 0; }
 
+#bibliography p {
+  margin-left: 2em;
+  text-indent: -2em; }
+
 @media screen and (max-width: 768px) {
   /* @group ----- Generic HTML elements ----- */
   input[type=text], input[type=password], textarea {
