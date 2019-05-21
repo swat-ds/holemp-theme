@@ -133,6 +133,11 @@ a:hover, #primary-nav a:hover, #primary-nav a:focus, #primary-nav li.active > a 
 #landing .exhibits-row {
     display: flex;
     justify-content: space-evenly;
+
+
+    @media screen and (max-width: $tablet-width) {
+        flex-direction: column;
+    }
 }
 
 #glossary h3 {
