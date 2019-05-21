@@ -1768,6 +1768,73 @@ h2 {
 #glossary h3 {
   font-weight: bold; }
 
+ul#colonization-timeline {
+  list-style: none; }
+  ul#colonization-timeline h3, ul#colonization-timeline p {
+    display: inline-block;
+    margin: .5em 0;
+    padding-bottom: .5em; }
+  ul#colonization-timeline h3 {
+    float: left;
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 193.75px;
+    text-align: right;
+    vertical-align: middle; }
+    @media only screen and (max-width: 767px) {
+      ul#colonization-timeline h3 {
+        margin: 0; } }
+    @media only screen and (min-width: 768px) and (max-width: 1139px) {
+      ul#colonization-timeline h3 {
+        width: 124px; } }
+    @media only screen and (max-width: 767px) {
+      ul#colonization-timeline h3 {
+        width: 300px; } }
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+      ul#colonization-timeline h3 {
+        width: 420px; } }
+    @media screen and (max-width: 768px) {
+      ul#colonization-timeline h3 {
+        text-align: center;
+        width: 100%; } }
+  ul#colonization-timeline p {
+    float: left;
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 763.75px;
+    vertical-align: middle; }
+    @media only screen and (max-width: 767px) {
+      ul#colonization-timeline p {
+        margin: 0; } }
+    @media only screen and (min-width: 768px) and (max-width: 1139px) {
+      ul#colonization-timeline p {
+        width: 508px; } }
+    @media only screen and (max-width: 767px) {
+      ul#colonization-timeline p {
+        width: 300px; } }
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+      ul#colonization-timeline p {
+        width: 420px; } }
+    @media screen and (max-width: 768px) {
+      ul#colonization-timeline p {
+        width: 100%; } }
+  ul#colonization-timeline h3::after {
+    content: "\00a0\00a0\00a0"; }
+  ul#colonization-timeline li {
+    zoom: 1;
+    margin-bottom: 20px; }
+    ul#colonization-timeline li:after {
+      clear: both; }
+    ul#colonization-timeline li:before, ul#colonization-timeline li:after {
+      content: '\0020';
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0; }
+
 @media screen and (max-width: 768px) {
   /* @group ----- Generic HTML elements ----- */
   input[type=text], input[type=password], textarea {

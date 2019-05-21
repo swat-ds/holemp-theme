@@ -138,3 +138,38 @@ a:hover, #primary-nav a:hover, #primary-nav a:focus, #primary-nav li.active > a 
 #glossary h3 {
     font-weight: bold;
 }
+
+ul#colonization-timeline {
+    list-style: none;
+
+    h3,p { 
+        display: inline-block;
+        margin: .5em 0;
+        padding-bottom: .5em;
+    }
+
+
+    h3 { 
+        @include columns(3);
+        text-align: right;
+        vertical-align: middle;
+        @media screen and (max-width: $tablet-width) {
+            text-align: center;
+            width: 100%;
+        }
+
+    }
+    p { 
+        @include columns(11); 
+        vertical-align: middle;
+        @media screen and (max-width: $tablet-width) {
+            width: 100%;
+        }
+    }
+
+    h3::after { content: "\00a0\00a0\00a0"; }
+
+    li { 
+        @include row;
+    }
+}
