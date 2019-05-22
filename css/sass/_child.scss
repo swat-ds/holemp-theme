@@ -120,7 +120,7 @@ a:hover, #primary-nav a:hover, #primary-nav a:focus, #primary-nav li.active > a 
     @include clearfix;
 }
 
-#landing .exhibit.record {
+#home .exhibit.record {
 
     max-width: 10rem;
     // display: inline-block;
@@ -130,7 +130,7 @@ a:hover, #primary-nav a:hover, #primary-nav a:focus, #primary-nav li.active > a 
     }
 }
 
-#landing .exhibits-row {
+#home .exhibits-row {
     display: flex;
     justify-content: space-evenly;
 

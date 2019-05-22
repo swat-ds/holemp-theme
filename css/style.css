@@ -1754,18 +1754,18 @@ h2 {
     width: 0;
     height: 0; }
 
-#landing .exhibit.record {
+#home .exhibit.record {
   max-width: 10rem; }
-  #landing .exhibit.record p {
+  #home .exhibit.record p {
     display: none; }
 
-#landing .exhibits-row {
+#home .exhibits-row {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: space-evenly;
       justify-content: space-evenly; }
   @media screen and (max-width: 768px) {
-    #landing .exhibits-row {
+    #home .exhibits-row {
       -ms-flex-direction: column;
           flex-direction: column; } }
 
