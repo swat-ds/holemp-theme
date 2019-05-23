@@ -1689,6 +1689,23 @@ h2 {
   min-height: 2em;
   text-align: center; }
 
+#home .exhibit.record {
+  width: 10rem; }
+  #home .exhibit.record p {
+    display: none; }
+  #home .exhibit.record a.image {
+    margin-left: 20.25px; }
+
+#home .exhibits-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: space-evenly;
+      justify-content: space-evenly; }
+  @media screen and (max-width: 768px) {
+    #home .exhibits-row {
+      -ms-flex-direction: column;
+          flex-direction: column; } }
+
 .exhibits.browse #content h1:first-child {
   visibility: hidden; }
 
@@ -1753,21 +1770,6 @@ h2 {
     visibility: hidden;
     width: 0;
     height: 0; }
-
-#home .exhibit.record {
-  max-width: 10rem; }
-  #home .exhibit.record p {
-    display: none; }
-
-#home .exhibits-row {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: space-evenly;
-      justify-content: space-evenly; }
-  @media screen and (max-width: 768px) {
-    #home .exhibits-row {
-      -ms-flex-direction: column;
-          flex-direction: column; } }
 
 #glossary h3 {
   font-weight: bold; }

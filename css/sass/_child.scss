@@ -52,7 +52,30 @@ a:hover, #primary-nav a:hover, #primary-nav a:focus, #primary-nav li.active > a 
         text-align: center;
     }
 
+    .exhibit.record {
+
+        width: 10rem;
+
+        p {
+        display: none;
+        }
+
+        a.image {
+            margin-left: $spacing-unit * .75;
+        }
+    }
+    
+    .exhibits-row {
+        display: flex;
+        justify-content: space-evenly;
+
+
+        @media screen and (max-width: $tablet-width) {
+            flex-direction: column;
+        }
+    }
 }
+
 
 .exhibits.browse #content {
     h1:first-child { visibility: hidden; }
@@ -120,25 +143,6 @@ a:hover, #primary-nav a:hover, #primary-nav a:focus, #primary-nav li.active > a 
     @include clearfix;
 }
 
-#home .exhibit.record {
-
-    max-width: 10rem;
-    // display: inline-block;
-
-    p {
-        display: none;
-    }
-}
-
-#home .exhibits-row {
-    display: flex;
-    justify-content: space-evenly;
-
-
-    @media screen and (max-width: $tablet-width) {
-        flex-direction: column;
-    }
-}
 
 #glossary h3 {
     font-weight: bold;
