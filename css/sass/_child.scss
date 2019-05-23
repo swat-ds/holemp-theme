@@ -49,19 +49,18 @@ a:hover, #primary-nav a:hover, #primary-nav a:focus, #primary-nav li.active > a 
 
     .exhibits-row h3 {
         min-height: 2em;
+        max-width: 10rem;
         text-align: center;
     }
 
     .exhibit.record {
-
-        width: 10rem;
 
         p {
         display: none;
         }
 
         a.image {
-            margin-left: $spacing-unit * .75;
+            margin-left: $spacing-unit * 5/3;
         }
     }
     

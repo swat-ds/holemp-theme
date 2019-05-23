@@ -1687,14 +1687,14 @@ h2 {
 
 #home .exhibits-row h3 {
   min-height: 2em;
+  max-width: 10rem;
   text-align: center; }
 
-#home .exhibit.record {
-  width: 10rem; }
-  #home .exhibit.record p {
-    display: none; }
-  #home .exhibit.record a.image {
-    margin-left: 20.25px; }
+#home .exhibit.record p {
+  display: none; }
+
+#home .exhibit.record a.image {
+  margin-left: 45px; }
 
 #home .exhibits-row {
   display: -ms-flexbox;
