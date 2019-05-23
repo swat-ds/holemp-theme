@@ -107,31 +107,35 @@ a:hover, #primary-nav a:hover, #primary-nav a:focus, #primary-nav li.active > a 
     text-transform: uppercase;
 }
 
-// dev
-
-#neatline-map #OpenLayers_Map_4_OpenLayers_ViewPort:last-of-type { display:none; }
 
 #neatline-map {
-    @include columns(11);
+    @include columns(12);
 }
 
-#neatline-narrative {
-    @include columns(4);
+#neatline-narrative #key {
+    @include columns(3);
+
     h1 { margin-top: 0px; }
+    padding-left: $spacing-unit * .5;
+
     table {
         border: unset;
     }
     td{ 
-        font-size: $base-font-size * .75;
+        font-size: $base-font-size;
         font-family: 'Raleway';
+        text-transform: uppercase;   
         border: none;
         border-bottom: 1px solid rgb(204,204,204);
-        padding: 0 0 0 0;
+        padding: 0 0 0 $spacing-unit * .5;
+
+        text-align: left;
+        vertical-align: middle;
      }
 
      td img {
-        max-width: 50px;
-        max-height: 50px;
+        max-width: 2em;
+        max-height: 2em;
      }
 }
 
@@ -140,11 +144,6 @@ a:hover, #primary-nav a:hover, #primary-nav a:focus, #primary-nav li.active > a 
     #dublin-core-subject,
     #dublin-core-source,
     #dublin-core-rights { display: none; }
-}
-
-#neatline-narrative td {
-    text-align: center;
-    vertical-align: middle;
 }
 
 .contributors-gallery .contributor {
