@@ -45,34 +45,55 @@ a:hover, #primary-nav a:hover, #primary-nav a:focus, #primary-nav li.active > a 
     display: none;
 }
 
-#home {
+#home .exhibits-row {
 
-    .exhibits-row h3 {
+    display: flex;
+    justify-content: space-evenly;
+
+    & > div {
+        width: 250px;
+        transition: opacity .2s ease-out;
+        display: block;
+    }
+
+    & > div:hover {
+        opacity: .5;
+    }
+
+    h3 {
         min-height: 2em;
-        max-width: 10rem;
         text-align: center;
-    }
+    }    
 
-    .exhibit.record {
+    a.image {
 
-        p {
-        display: none;
-        }
+        width: 225px;
+        height: 260px;
+        margin: 0 auto;
+        float: unset;
+        display: block;
+        border: 1px solid rgb(204,204,204);
+        border-radius: 2px;
 
-        a.image {
-            margin-left: $spacing-unit * 5/3;
-        }
-    }
-    
-    .exhibits-row {
-        display: flex;
-        justify-content: space-evenly;
-
-
-        @media screen and (max-width: $tablet-width) {
-            flex-direction: column;
+        img { 
+            border: unset;
+            display: block;
+            width: 100%;
         }
     }
+
+    @media screen and (max-width: $tablet-width) {
+        flex-direction: column;
+    }
+    @media screen and (min-width: $tablet-width) and (max-width: $base-width) {
+        h3 { 
+            font-size: 1em; 
+            min-height: 3em;
+        }
+        & > div { width: 200px; }
+        a.image { width: 175px; }
+    }
+
 }
 
 
@@ -89,7 +110,6 @@ a:hover, #primary-nav a:hover, #primary-nav a:focus, #primary-nav li.active > a 
 .neatline.show #content > h1 { display: none; }
 
 #neatline-map #static-bubble .content.item {
-    h3 { display: none; }
     #dublin-core-description,
     #dublin-core-subject,
     #dublin-core-source,

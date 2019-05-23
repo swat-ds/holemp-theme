@@ -951,7 +951,7 @@ nav + .exhibit {
   width: 1120px;
   margin-left: 0;
   margin-right: 0;
-  padding-right: 10px; }
+  padding-right: 27px; }
   @media only screen and (max-width: 767px) {
     #home #primary {
       margin: 0; } }
@@ -1685,26 +1685,44 @@ h2 {
 #search-container {
   display: none; }
 
-#home .exhibits-row h3 {
-  min-height: 2em;
-  max-width: 10rem;
-  text-align: center; }
-
-#home .exhibit.record p {
-  display: none; }
-
-#home .exhibit.record a.image {
-  margin-left: 45px; }
-
 #home .exhibits-row {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: space-evenly;
       justify-content: space-evenly; }
+  #home .exhibits-row > div {
+    width: 250px;
+    transition: opacity .2s ease-out;
+    display: block; }
+  #home .exhibits-row > div:hover {
+    opacity: .5; }
+  #home .exhibits-row h3 {
+    min-height: 2em;
+    text-align: center; }
+  #home .exhibits-row a.image {
+    width: 225px;
+    height: 260px;
+    margin: 0 auto;
+    float: unset;
+    display: block;
+    border: 1px solid #cccccc;
+    border-radius: 2px; }
+    #home .exhibits-row a.image img {
+      border: unset;
+      display: block;
+      width: 100%; }
   @media screen and (max-width: 768px) {
     #home .exhibits-row {
       -ms-flex-direction: column;
           flex-direction: column; } }
+  @media screen and (min-width: 768px) and (max-width: 1140px) {
+    #home .exhibits-row h3 {
+      font-size: 1em;
+      min-height: 3em; }
+    #home .exhibits-row > div {
+      width: 200px; }
+    #home .exhibits-row a.image {
+      width: 175px; } }
 
 .exhibits.browse #content h1:first-child {
   visibility: hidden; }
@@ -1717,9 +1735,6 @@ h2 {
   text-transform: uppercase; }
 
 .neatline.show #content > h1 {
-  display: none; }
-
-#neatline-map #static-bubble .content.item h3 {
   display: none; }
 
 #neatline-map #static-bubble .content.item #dublin-core-description,
