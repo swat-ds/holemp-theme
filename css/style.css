@@ -1734,8 +1734,59 @@ h2 {
   font-family: Raleway;
   text-transform: uppercase; }
 
-.neatline.show #content > h1 {
+#neatline-map #OpenLayers_Map_4_OpenLayers_ViewPort:last-of-type {
   display: none; }
+
+#neatline-map {
+  float: left;
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 763.75px; }
+  @media only screen and (max-width: 767px) {
+    #neatline-map {
+      margin: 0; } }
+  @media only screen and (min-width: 768px) and (max-width: 1139px) {
+    #neatline-map {
+      width: 508px; } }
+  @media only screen and (max-width: 767px) {
+    #neatline-map {
+      width: 300px; } }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    #neatline-map {
+      width: 420px; } }
+
+#neatline-narrative {
+  float: left;
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 265px; }
+  @media only screen and (max-width: 767px) {
+    #neatline-narrative {
+      margin: 0; } }
+  @media only screen and (min-width: 768px) and (max-width: 1139px) {
+    #neatline-narrative {
+      width: 172px; } }
+  @media only screen and (max-width: 767px) {
+    #neatline-narrative {
+      width: 300px; } }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    #neatline-narrative {
+      width: 420px; } }
+  #neatline-narrative h1 {
+    margin-top: 0px; }
+  #neatline-narrative table {
+    border: unset; }
+  #neatline-narrative td {
+    font-size: 13.5px;
+    font-family: 'Raleway';
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    padding: 0 0 0 0; }
+  #neatline-narrative td img {
+    max-width: 50px;
+    max-height: 50px; }
 
 #neatline-map #static-bubble .content.item #dublin-core-description,
 #neatline-map #static-bubble .content.item #dublin-core-subject,
