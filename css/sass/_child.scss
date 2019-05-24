@@ -53,6 +53,7 @@ a:hover, #primary-nav a:hover, #primary-nav a:focus, #primary-nav li.active > a 
     & > div {
         width: 250px;
         transition: opacity .2s ease-out;
+        -webkit-transition: opacity .2s ease-out;
         display: block;
     }
 

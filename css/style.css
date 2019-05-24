@@ -1693,6 +1693,7 @@ h2 {
   #home .exhibits-row > div {
     width: 250px;
     transition: opacity .2s ease-out;
+    -webkit-transition: opacity .2s ease-out;
     display: block; }
   #home .exhibits-row > div:hover {
     opacity: .5; }
